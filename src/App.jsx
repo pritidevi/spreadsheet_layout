@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Components/Navbar'
 import ToolbarSection from './Components/ToolbarSection'
-import Spreadsheet from './Components/Spreadsheet'
+
 import Spreadsheet_items from './Components/Spreadsheet_items'
 import Footer from './Components/Footer'
 
@@ -21,36 +21,36 @@ export default function App() {
   {
     id: 5, job: "Prepare financial report for Q4", date: "25-01-2025", status: "Blocked", submitter: "Jessica Brown", url: "www.jessicabro...", assigned: "Kevin Smith", priority: "Low", duedate: "30-01-2025", estvalue: `2,800,000 \u20B9`
   },
-   {
-     id: 6, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``
-  },  
   {
-     id: 7, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``
+    id: 6, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``
   },
-  { id: 8, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``},
-  { id: 9, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``},
   {
-     id: 10, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``
+    id: 7, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``
   },
-  { id: 11, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``},
-  { id: 12, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``},
-   {
-     id: 13, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``
-  },
-  { id: 14, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``},
-  { id: 15, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``},
+  { id: 8, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: `` },
+  { id: 9, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: `` },
   {
-     id: 16, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``
+    id: 10, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``
   },
-  { id: 17, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``},
-  { id: 18, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``},
-   {
-     id: 19, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``
-  },
-  { id: 20, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``},
-  { id: 21 ,job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``},
+  { id: 11, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: `` },
+  { id: 12, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: `` },
   {
-     id: 22, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``
+    id: 13, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``
+  },
+  { id: 14, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: `` },
+  { id: 15, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: `` },
+  {
+    id: 16, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``
+  },
+  { id: 17, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: `` },
+  { id: 18, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: `` },
+  {
+    id: 19, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``
+  },
+  { id: 20, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: `` },
+  { id: 21, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: `` },
+  {
+    id: 22, job: "", date: "", status: "", submitter: "", url: "", assigned: "", priority: "", duedate: "", estvalue: ``
   }
   ]
   return (
@@ -59,9 +59,9 @@ export default function App() {
 
         <Navbar />
         <ToolbarSection />
- <div className='flex-1 overflow-y-auto'>
-        <Spreadsheet_items itemlist={itemlist} /></div>
-       <Footer/>
+        <div className='flex-1 overflow-y-auto'>
+          <Spreadsheet_items itemlist={itemlist} /></div>
+        <Footer />
       </div>
     </>
   )

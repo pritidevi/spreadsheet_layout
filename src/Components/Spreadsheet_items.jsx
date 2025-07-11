@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { IoIosArrowDown, IoIosArrowDropdown, IoIosArrowDropdownCircle, IoMdContact } from 'react-icons/io'
+import { IoIosArrowDown, IoIosArrowDropdownCircle, IoMdContact } from 'react-icons/io'
 import { LuBriefcaseBusiness, LuSheet } from 'react-icons/lu'
 import { TbWorld } from 'react-icons/tb'
 import { BiRefresh } from 'react-icons/bi'
@@ -17,7 +17,7 @@ export default function Spreadsheet_items({ itemlist }) {
   const onextractclick = () => {
     console.log("Extract... button is clicked")
   }
-const[border,setborder]=useState(false)
+
   return (
     <>
 
@@ -50,18 +50,18 @@ const[border,setborder]=useState(false)
             <th className="border px-4 py-2">#</th>
             <th className="border px-4 py-2 flex gap-2 items-center"> <LuBriefcaseBusiness /><span className="flex items-center gap-28"> Job Request <IoIosArrowDown /></span></th>
 
-            <th className="border px-4 py-2 "> <span className="flex items-center gap-2"><LuSheet  className='text-lg'/>
+            <th className="border px-4 py-2 "> <span className="flex items-center gap-2"><LuSheet className='text-lg' />
               <span className="flex items-center gap-1">
                 Submitted <IoIosArrowDown />
               </span></span>
             </th>
 
-            <th className="border px-4 py-2  "><span className="flex items-center gap-2"> <IoIosArrowDropdownCircle  className='text-lg'/>
+            <th className="border px-4 py-2  "><span className="flex items-center gap-2"> <IoIosArrowDropdownCircle className='text-lg' />
               <span className="flex items-center gap-6">
                 Status <IoIosArrowDown /></span></span></th>
-            <th className="border  py-2  px-4  "><span className="flex items-center gap-2"><IoMdContact className='text-lg'/><span className="flex items-center gap-6">
-              Submitter <IoIosArrowDown className='text-lg'/></span></span></th>
-            <th className="border px-4 py-2  "><span className="flex items-center gap-2"><TbWorld className='text-lg'/><span className="flex items-center gap-6"> URL <IoIosArrowDown className='text-lg'/></span></span></th>
+            <th className="border  py-2  px-4  "><span className="flex items-center gap-2"><IoMdContact className='text-lg' /><span className="flex items-center gap-6">
+              Submitter <IoIosArrowDown className='text-lg' /></span></span></th>
+            <th className="border px-4 py-2  "><span className="flex items-center gap-2"><TbWorld className='text-lg' /><span className="flex items-center gap-6"> URL <IoIosArrowDown className='text-lg' /></span></span></th>
             <th className="border px-4 bg-[#00800026] py-2">Assigned</th>
             <th className="border px-4  bg-[#e9def0] py-2">Priority</th>
             <th className="border px-4 bg-[#e9def0]  py-2">Due Date</th>
@@ -74,20 +74,20 @@ const[border,setborder]=useState(false)
 
             <tr key={item.id} >
 
-              <td className={`tableitems ${border ?'border-2 border-green-500 shadow-lg':''} `}>{item.id}</td>
-              <td className={`tableitems ${border ?'border-2 border-green-500 shadow-lg':''}`} >{item.job}</td>
-              <td className={`tableitems ${border ?'border-2 border-green-500 shadow-lg':''}${item.id===8 ?'border-2 border-green-500 shadow-lg':''} `}>{item.date}</td>
-              <td className={`tableitems${border ?'border-2 border-green-500 shadow-lg':''} `}><button className={`btn2  
+              <td className={`tableitems  `}>{item.id}</td>
+              <td className={`tableitems `} >{item.job}</td>
+              <td className={`tableitems ${item.id === 8 ? 'border-2 border-green-500 shadow-lg' : ''} `}>{item.date}</td>
+              <td className={`tableitems `}><button className={`btn2  
                   ${item.status === "In-process" && "bg-yellow-100 text-yellow-600"} ${item.status === "Need to start" && "bg-gray-200 text-gray-500"} ${item.status === "Complete" && "bg-green-200 text-green-600"} ${item.status === "Blocked" && "bg-red-200 text-red-600"}`}
               >{item.status}</button></td>
-              <td className={`tableitems ${border ?'border-2 border-green-500 shadow-lg':''}`}>{item.submitter}</td>
-              <td className={`tableitems  underline${border ?'border-2 border-green-500 shadow-lg':''}`}>{item.url}</td>
-              <td className={`tableitems ${border ?'border-2 border-green-500 shadow-lg':''}`}>{item.assigned}</td>
+              <td className={`tableitems `}>{item.submitter}</td>
+              <td className={`tableitems  underline`}>{item.url}</td>
+              <td className={`tableitems `}>{item.assigned}</td>
 
-              <td className={` tableitems ${border ?'border-2 border-green-500 shadow-lg':''} ${item.priority === "High" && `text-red-600`} ${item.priority === "Medium" && "text-yellow-600"} ${item.priority === "Low" && "text-blue-500"}`}>{item.priority}</td>
+              <td className={` tableitems  ${item.priority === "High" && `text-red-600`} ${item.priority === "Medium" && "text-yellow-600"} ${item.priority === "Low" && "text-blue-500"}`}>{item.priority}</td>
 
-              <td className={` tableitems ${border ?'border-2 border-green-500 shadow-lg':''}`}>{item.duedate}</td>
-              <td className={`tableitems ${border ?'border-2 border-green-500 shadow-lg':''} `}>{item.estvalue}</td>
+              <td className={` tableitems `}>{item.duedate}</td>
+              <td className={`tableitems  `}>{item.estvalue}</td>
               <td className="border-l-2 border-r-2 border-dashed border-gray-400 w-32">
 
               </td>

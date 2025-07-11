@@ -7,16 +7,16 @@ import { RiArrowRightDoubleFill } from 'react-icons/ri'
 import { VscEyeClosed } from 'react-icons/vsc'
 
 export default function ToolbarSection() {
-    const onimportclick=()=>{
+    const onimportclick = () => {
         console.log("Import button is clicked")
     }
-      const onexportclick=()=>{
+    const onexportclick = () => {
         console.log("Export button is clicked")
     }
-      const onshareclick=()=>{
+    const onshareclick = () => {
         console.log("Share button is clicked")
     }
-      const onnewactiontclick=()=>{
+    const onnewactiontclick = () => {
         console.log("New Action button is clicked")
     }
     return (
@@ -34,9 +34,9 @@ export default function ToolbarSection() {
             <div className="right flex">
 
                 <button className='button' onClick={onimportclick}><LuArrowDownToLine />Import</button>
-                <button className='button'onClick={onexportclick}><LuArrowUpToLine />Export</button>
-                <button className='button'onClick={onshareclick}><FaRegShareFromSquare />Share</button>
-                <button className='button bg-[#1e5e36] text-white'onClick={onnewactiontclick}><PiArrowsSplit />New Action</button>
+                <button className='button' onClick={onexportclick}><LuArrowUpToLine />Export</button>
+                <button className='button' onClick={onshareclick}><FaRegShareFromSquare />Share</button>
+                <button className='button bg-[#1e5e36] text-white' onClick={onnewactiontclick}><PiArrowsSplit />New Action</button>
 
             </div>
         </div>
