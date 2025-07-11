@@ -1,12 +1,48 @@
-# React + Vite
+# 📋 Internship Project – Task Management UI (Static Frontend with Button Interactions)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **static frontend project** built using **React (Vite)** and **Tailwind CSS**.  
+It displays a spreadsheet-style layout to manage and visualize task-related data like job title, status, assigned person, due dates, and more.
 
-Currently, two official plugins are available:
+The project includes several buttons that respond to user interaction with basic `onClick` event handlers that log messages to the console.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+--------------------
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 📄 Tabular layout showing task details such as:
+  - ID, Job, Date, Status, Submitter, URL, Assigned, Priority, Due Date, Estimated Value
+- 🎯 Status indicators:  
+  - ✅ Complete  
+  - ⏳ In-process  
+  - ❗ Need to start  
+  - 🔴 Blocked
+- 🔺 Priority indicators: High, Medium, Low with color coding
+- 💡 Dynamic rows created using `.map()` function
+- 🖱️ `onClick` events on buttons for basic interactivity
+    📤 Export
+    📦 Import
+    🔄 Share
+    ➕ New Action
+
+- 🎨 Fully styled using Tailwind CSS
+
+---
+
+## 🛠️ Tech Stack
+
+- ⚛️ React.js (with Vite)
+- 💅 Tailwind CSS
+- 🧠 JavaScript (JSX)
+- 🧾 Markdown for documentation
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run the project locally:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/pritidevi/spreadsheet_layout.git
+cd internship_project
