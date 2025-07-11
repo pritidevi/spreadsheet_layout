@@ -46,3 +46,4 @@ Follow these steps to run the project locally:
 ```bash
 git clone https://github.com/pritidevi/spreadsheet_layout.git
 cd internship_project
+for project run  'npm run start'
