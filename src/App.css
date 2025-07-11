@@ -1,0 +1,12 @@
+body{
+
+  background-color: white;
+  min-width: 1000px;
+  height: 100%;
+}
+#root{
+  width: 848px;
+  height: 100%;
+  min-width: 867px;
+  
+}
